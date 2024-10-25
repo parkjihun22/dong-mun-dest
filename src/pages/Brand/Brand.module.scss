@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bener {
+    width: 100vw;
+    height: auto;
+}
+
+.textBox{
+    margin: 4vw 0 0 0;
+    text-align: center;
+    font-size: 1.5vw;
+
+    div:nth-of-type(1) {
+        font-weight: 200;
+    }
+
+    div:nth-of-type(2) {
+        margin-top: 0.5vw;
+        font-weight: 800;
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
+        color: #910250;
+    }
+}
+
+.page1Image {
+    margin: 3vw 0 3vw 0;
+    width: 70%;
+    margin-top: 3vh; // 위쪽 여백
+    margin-bottom: 1vh; // 아래쪽 여백 추가 (이 값을 조정하여 간격 조절)
+
+    @media (max-width: 900px) {
+        width: 90%;
+        margin: 0.5vh auto; // 위쪽 여백을 3vh로 설정하고, 좌우 중앙 정렬
+    }
+}
+
+.videoContainer {
+    margin: 1rem;
+}
