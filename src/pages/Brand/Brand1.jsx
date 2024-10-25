@@ -11,7 +11,6 @@ import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
 
 import page1 from "../../assets/Brand/intro/brand1.jpg";
-import page2 from "../../assets/Brand/intro/brand2.jpg";
 
 const Brand1 = () => {
 	const menuContents = [{ title: "브랜드소개", url: "/brand/intro" }, { title: "홍보 영상", url: "/brand/video" }]
@@ -50,19 +49,14 @@ const Brand1 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-				<div>평택 브레인시티 눈부신 가치 위에</div>
-				<div>중흥건설의 새로운 자부심으로 찾아옵니다.</div>
+				<div>평택 서부권의 중심 화양신도시 눈부신 가치 위에</div>
+				<div>평택화양동문디이시트의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 			
 			<img 
     			src={page1} 
     			className={styles.page1Image} 
    				alt="brand-image-1" />
-
-			
-			<img 
-    			src={page2} 
-   				className={styles.page1Image} alt="brand-image-2"  />
 
 			<Footer />
 		</div>

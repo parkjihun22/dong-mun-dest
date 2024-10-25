@@ -10,11 +10,10 @@ import room114A from "../../assets/UnitplanBox/84c.jpg";
 import { useMediaQuery } from "react-responsive";
 
 const contents = [
-    { type: '59A', src: room59A },
-    { type: '59B', src: room59B },
-    { type: '84A', src: room84A },
-    { type: '84B', src: room84B },
-    { type: '84C', src: room114A },
+    { type: '84A', src: room59A },
+    { type: '84B', src: room59B },
+    { type: '107A', src: room84A },
+
 ]
 
 const UnitplanBox = () => {

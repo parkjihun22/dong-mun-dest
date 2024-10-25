@@ -18,7 +18,7 @@
 
     &.containerFirst {
         background-color: transparent;
-        border-bottom: 3px solid #910250;
+        border-bottom: 3px solid #1b2d53;
     }
 
     &.container {
@@ -31,7 +31,7 @@
         top: 5vh;
         left: 2vw;
         transform: translateY(-50%, -50%);
-        width: 18vw;
+        width: 10vw;
         height: auto;
 
         @media (max-width: 900px) {
@@ -66,22 +66,22 @@
             font-size: 1vw;
             border-bottom: 3px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
             text-decoration: none; //    기본 밑줄 취소
-            color: #910250; // 기본 글자색 설정
+            color: #1b2d53; // 기본 글자색 설정
 
             &:hover {
-                border-bottom: 3px solid #910250; // hover 시 하단 border만 나타남
-                color: #910250; // hover 시 글자색 변경
+                border-bottom: 3px solid #1b2d53; // hover 시 하단 border만 나타남
+                color: #1b2d53; // hover 시 글자색 변경
                 font-size: 1vw; // 크기 유지
                 font-weight: normal; // 두께를 일반으로 유지
             }
         }
 
         .linkItem {
-            color: #FFFFFF; // 기본 글자색 흰색
+            color: #1b2d53; // 기본 글자색 흰색
         }
 
         .scrolledLinkItem {
-            color: #910250; // 기본 글자색 흰색
+            color: #1b2d53; // 기본 글자색 흰색
             font-weight: bold;
         }
 
@@ -93,7 +93,7 @@
             text-decoration: none;
 
             &:hover {
-                border-bottom: 5px solid #910250;
+                border-bottom: 5px solid #1b2d53;
             }
         }
 
@@ -102,8 +102,8 @@
         }
 
         .scrolledItem {
-            color: #000000;
-            font-weight: bold;
+            color: #1b2d53;
+            font-weight: normal;
         }
     }
 
@@ -120,11 +120,11 @@
     }
 
     .phoneNumber {
-        color: #FFFFFF;
+        color: #1b2d53;
     }
 
     .scrolledPhoneNumber {
-        color: #910250;
+        color: #FFFFFF;
         font-weight: bold;
     }
 }
@@ -150,8 +150,8 @@
     img {
         position: absolute;
         top: 15%;
-        left: 3.5%;
-        width: 15vw;
+        left: 2%;
+        width: 10vw;
         height: auto;
 
         @media (max-width: 900px) {
@@ -187,11 +187,11 @@
             font-size: 1.2vw;
             border-bottom: 3px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
             text-decoration: none; // 기본 밑줄 취소
-            color: #910250; // 기본 글자색 설정
+            color: #1b2d53; // 기본 글자색 설정
             font-weight: bold;
 
             &:hover {
-                border-bottom: 3px solid #910250;
+                border-bottom: 3px solid #1b2d53;
             }
         }
 
@@ -213,7 +213,7 @@
                 color: #000000;
 
                 &:hover {
-                    border-bottom: 3px solid #910250;
+                    border-bottom: 3px solid #1b2d53;
                 }
             }
 
@@ -231,7 +231,7 @@
 
                     &:hover {
                         color: #FFFFFF;
-                        background-color: #910250;
+                        background-color: #1b2d53;
                     }
                 }
             }
@@ -247,7 +247,7 @@
         font-size: 1.5vw;
         font-weight: bold;
         text-decoration: none;
-        color: #910250;
+        color: #1b2d53;
     }
 }
 
@@ -272,7 +272,7 @@
     text-decoration: none;
 
     .logo {
-        width: 40vw;
+        width: 20vw;
     }
 
     .icon {

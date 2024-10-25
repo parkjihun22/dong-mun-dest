@@ -28,42 +28,40 @@ const section4Contents = [
 	{
 		imgSrc: section4_Image1,
 		title: "VISION",
-		text1: `반도체 클러스터의 중심 <br />
-			  세계최대규모 120만평 삼성전자 캠퍼스<br />
+		text1: `수도권 최대규모 <br />
+			  국가산업단지 63만평(예정), 자동차클러스터(예정)<br />
 			  직주근접 첨단복합도시의 탄생`,
-		text2: `브레인시티내 반도체 146만평규모<br />
-			  첨단산업시설 개발예정 수혜단지로 주거환경 개선 기대`,
+		text2: `브레인시티내 평택항 개발과 국가산업단지<br />
+			  자동차 배터리첨단산업시설 개발예정 수혜단지로 주거환경 개선 기대`,
 		link: "/BusinessGuide/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section4_Image2,
 		title: "INFRA",
-		text1: `브레인시티 내 초,중,고등학교<br />
-			  	카이스트 평택캠퍼스 등<br />
+		text1: `화양신도시 내 초,중,고등학교<br />
+			  	모두 신설예정 <br />
 			  	우수한 교육환경`,
-		text2: `아주대학교 AI 첨단복합 종합병원, CGV, 사우나<br />
-			  	중심상권 도보 3분거리 등 풍부한 인프라`,
+		text2: `500병상 규모 최첨단 종합병원, 홈플러스, 사우나<br />
+			  	중심상권 도보 5분거리 등 풍부한 인프라`,
 		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section4_Image3,
 		title: "TRAFFIC",
-		text1: `평택지제역 1호선,SRT(운행중)<br />
-			  수원발 KTX , GTX A · C라인 개통 확정<br />
-			  경기도권내 유일 펜타역세권<br />
-			  광역 교통망의 중심`,
-		text2: `삼성전자 평택캠퍼스 차량5분<br />
-			  송탄IC 5분 등 편리한 교통인프라`,
+		text1: `평택안중역 1호선 11월 OPNE 확정<br />
+			  2026년KTX(예정) 광역 교통망의 중심`,
+		text2: `서평택 IC 차량5분, 서해안고속도로,<br />
+				평택제천고속도로, 38번국도 매우인접 편리한 교통인프라`,
 		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
 	},
 	{
 		imgSrc: section4_Image4,
 		title: "PREMIUM",
-		text1: `브레인시티 내 도보1분 의세권 프리미엄 <br /> 브레인시티 한신더휴`,
-		text2: `주거 선호도 높은 중소형 평형대로 59㎡ · 84㎡<br /> 타입의 실속있는 주거공간 구성`,
+		text1: `화양신도시 종합병원 도보5분 의세권 프리미엄`,
+		text2: `500병상 규모 최첨단 종합병원,<br /> 서부권 중심상업지구 도보5분권내 진입가능`,
 		link: "/LocationEnvironment/primium",
 		linkText: "더 알아보기 >"
 	}
@@ -151,9 +149,9 @@ const Main = () => {
 					<div className={styles.imageContainer}>
 						<img src={mainImage} className={styles.mainImage} />
 						<div className={styles.mainImageTextBox}>
-							<div className={styles.mainImageText1}>평택 브레인시티의 첫번째 시작</div>
-							<div className={styles.mainImageText2}>대단지 프리미엄 <span>ONE TOP!</span></div>
-							<div className={styles.mainImageText3}><span>평택 브레인시티 중흥S클래스</span></div>
+							<div className={styles.mainImageText1}>평택의 새로운 중심 화양</div>
+							<div className={styles.mainImageText2}>안중역 프리미엄을<span> 누리는</span></div>
+							<div className={styles.mainImageText3}><span>평택 화양 동문디이스트</span></div>
 
 						</div>
 
@@ -166,10 +164,10 @@ const Main = () => {
 							<div className={styles.textBox}>
 								<div className={styles.text1}>Location</div>
 								<div className={styles.text2}>" 방문 예약 고객 전원 신세계 상품권 100% 증정 "</div>
-								<div className={styles.text3}>- 브레인시티 중심상업지구 도보 3분 <br />
-									- 첨단 아주대학교 종합병원 도보 5분 <br />
-									- 평택 지제역 KTX, GTX-A · C 확정 삼성전자 평택캠퍼스, 초등학교, 수변공원 <br />
-									- 모두를 누리는 반도체밸리 주거 타운의 완성
+								<div className={styles.text3}>- 화양신도시 중심상업지구 도보 3분 <br />
+									- 최첨단 대형 종합병원 도보 5분 <br />
+									- 평택 안중역 경부선, KTX(예정) 초·중·고등학교 도보권, 수변공원 <br />
+									- 모두를 누리는 서평택의 핵심주거 타운의 완성
 								</div>
 
 								<div className={styles.text4}>
@@ -178,7 +176,7 @@ const Main = () => {
 							</div>
 
 							<div className={styles.menuBox}>
-								<div className={styles.text}><span>평택 브레인시티</span> 중흥S-클래스</div>
+								<div className={styles.text}><span>평택 화양</span> 동문 디 이스트</div>
 								<Link to="brand/intro" className={styles.btn}> 브랜드 소개 {'>'}</Link>
 							</div>
 						</div>
@@ -189,14 +187,14 @@ const Main = () => {
 
 							<div className={styles.textBox}>
 								<div className={styles.title}>
-									브레인시티 중심에사는<br />
+									서평택 배후입지 중심에사는<br />
 									<span>원탑 라이프의 시작!</span>
 								</div>
 								<div className={styles.subTitle}>
 									<div className={styles.textLine}></div>
 									<div className={styles.subText}>
 										찬란한 비전에 완벽한 주거가치까지 더해<br />
-										평택을 대표하는 프리미엄 라이프를 시작하다
+										화양신도시를 대표하는 프리미엄 라이프를 시작하다
 									</div>
 								</div>
 							</div>
@@ -209,7 +207,7 @@ const Main = () => {
 						<div className={styles.section3}>
 							<div className={styles.textBox}>
 								<div className={`${styles.text1} fadeUpRepeat`}>완벽한 생활에서 준비된 미래까지</div>
-								<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br />브레인시티<br /> 중흥S클래스에서 펼쳐집니다</div>
+								<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br />평택 화양 동문디이스트에서 펼쳐집니다</div>
 								<div className={`${styles.text3} fadeUpRepeat`}>SPECIAL PLAN</div>
 								<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 실현합니다</div>
 								<div className={`${styles.text5} fadeUpRepeat`}>주거의 품격과 가치를 높이는 <span>특화설계</span> <br />안전한 이동을 위한 세심한 <span>단지설계</span> <br />편리한 생활을 위한 최적의 <span>공간설계</span></div>
@@ -239,7 +237,7 @@ const Main = () => {
 							<div className={styles.imageBox}>
 								<img src={section5_Image1} />
 
-								<div className={styles.text1}>평택 브레인시티 중흥S클래스 </div>
+								<div className={styles.text1}>평택 화양 동문디이스트 </div>
 								<div className={styles.text2}>THE NATURAL NOBILITY</div>
 								<div className={styles.text3}>당신의 삶, 그 고귀함이 계속되길</div>
 							</div>
@@ -265,10 +263,10 @@ const Main = () => {
 						<img src={mobileImageMain} className={styles.mainImage} />
 						<div className={styles.overlay}></div>
 						<div className={styles.mainImageTextBox}>
-							<div className={styles.mainImageTitle}>평택브레인시티 중흥S클래스</div>
+							<div className={styles.mainImageTitle}>평택화양 동문디이스트</div>
 							<div className={styles.mainImageTextSub}>
-								세계최대규모 평택 삼성전자 캠퍼스<br />
-								지제역 펜타역세권 모두 누리는 프리미엄
+								전국최대규모 국가산업단지 <br />
+								안중역 경부선,KTX(예정)을 모두 누리는 프리미엄
 							</div>
 							<div className={styles.mainImageLine}></div>
 							<div className={styles.mainImageText}>선착순 동·호 지정중</div>
@@ -279,10 +277,10 @@ const Main = () => {
 
 						<div className={styles.text1}>Location</div>
 						<div className={styles.text2}>" 방문 예약 고객 전원 신세계 상품권 100% 증정 "</div>
-						<div className={styles.text3}>- 브레인시티 중심상업지구 도보 3분 <br />
-							- 첨단 아주대학교 종합병원 도보 5분 <br />
-							- 평택 지제역 KTX, GTX-A · C 확정 삼성전자 평택캠퍼스, 초등학교, 수변공원 <br />
-							- 모두를 누리는 반도체밸리 주거 타운의 완성
+						<div className={styles.text3}> - 화양신도시 중심상업지구 도보 3분 <br />
+									- 최첨단 대형 종합병원 도보 5분 <br />
+									- 평택 안중역 경부선, KTX(예정) 초·중·고등학교 도보권, 수변공원 <br />
+									- 모두를 누리는 서평택의 핵심주거 타운의 완성
 						</div>
 
 						<div className={styles.text4}>
@@ -295,14 +293,14 @@ const Main = () => {
 
 						<div className={styles.textBox}>
 							<div className={styles.title}>
-								평택 브레인시티의 중심으로 사는<br />
+									서평택 배후입지 중심에사는<br />
 								<span>원탑 라이프의 시작!</span>
 							</div>
 							<div className={styles.subTitle}>
 								<div className={styles.textLine}></div>
 								<div className={styles.subText}>
 									찬란한 비전에 완벽한 주거가치까지 더해<br />
-									평택을 대표하는 프리미엄 라이프를 시작하다
+									평택 화양신도시를 대표하는 프리미엄 라이프를 시작하다
 								</div>
 							</div>
 						</div>
@@ -312,7 +310,7 @@ const Main = () => {
 					<div className={styles.container3}>
 						<div className={styles.textbox}>
 							<div className={`${styles.text1} fadeUpRepeat`}>완벽한 생활에서 준비된 미래까지</div>
-							<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br /> 평택 브레인시티<br /> 중흥S클래스에서 펼쳐집니다</div>
+							<div className={`${styles.text2} fadeUpRepeat`}>기대한 모든 프리미엄이<br /> 평택화양 동문디이스트에서 펼쳐집니다</div>
 							<div className={`${styles.text3} fadeUpRepeat`}>SPECIAL PLAN</div>
 							<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 실현합니다</div>
 							<div className={`${styles.text5} fadeUpRepeat`}>주거의 품격과 가치를 높이는 <span>특화설계</span> <br />안전한 이동을 위한 세심한 <span>단지설계</span> <br />편리한 생활을 위한 최적의 <span>공간설계</span></div>
@@ -344,7 +342,7 @@ const Main = () => {
 					<div className={styles.container5}>
 						<img src={section5_Image1} />
 
-						<div className={styles.text1}>평택의 중심 브레인시티 중흥S클래스</div>
+						<div className={styles.text1}>평택화양신도의 중심 동문디이스트</div>
 						<div className={styles.text2}>THE NATURAL NOBILITY</div>
 						<div className={styles.text3}>당신의 삶, 그 고귀함이 계속되길</div>
 					</div>

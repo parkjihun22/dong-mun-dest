@@ -12,13 +12,13 @@ import page1 from "../../assets/BusinessGuide/BusinessGuide1/page1.jpg";
 import tableImage from "../../assets/BusinessGuide/BusinessGuide1/tableImage.jpg";
 
 const projectData = [
-	{ label: '사업명', value: '평택 브레인시티 중흥 S클래스 아파트 신축공사 ' },
-	{ label: '사업위치', value: '경기도 평택시 장안동 평택브레인시티 일반산업단지 1BL' },
-	{ label: '지역/지구', value: '제3종 일반주거지역 / 지구단위계획구역' },
-	{ label: '대지면적', value: '92,238,00㎡(27,901.99평)' },
-	{ label: '연면적', value: '324,618.99㎡(98,197.24평)' },
-	{ label: '공급규모', value: '총 1,980세대 , 지하 2층~ 지상 35층 16개동 ' },
-	{ label: '입주시기', value: '2027년 02월(예정)' },
+	{ label: '사업명', value: '평택 화양 동문 디 이스트' },
+	{ label: '사업위치', value: '경기도 평택시 현덕면 운정리 150-1번지 (평택 화양지구 6-2BL)' },
+	{ label: '건축면적', value: '5,181.1822 ㎡ (1,567.12평)' },
+	{ label: '대지면적', value: '38,144.2000 ㎡ (11,528.95평)' },
+	{ label: '연면적', value: '127,425.2794 ㎡ (38,546.14평)' },
+	{ label: '공급규모', value: '총 753세대 , 지하 2층~ 지상 29층 8개동 (84㎡,107㎡)' },
+	{ label: '주차대수', value: '아파트 총 1,055대 근린생활시설 3대 / 총 1,058대' },
 ];
 
 const BusinessGuide1 = () => {
@@ -52,8 +52,8 @@ const BusinessGuide1 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-				<div>브레인시티 중심에서 누리는 특별한 라이프 컬렉션</div>
-				<div>평택 브레인시티 중흥S클래스의 새로운 자부심으로 찾아옵니다.</div>
+				<div>평택 화양신도시에서 누리는 특별한 라이프 컬렉션</div>
+				<div>평택 화양 동문디이스트의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 			
 			<img className={styles.img3} src={page1} />
@@ -71,11 +71,6 @@ const BusinessGuide1 = () => {
 					</tbody>
 				</table>
 			</div>
-
-			<div className={styles.commonBox}>
-				{/* 공지사항 내용 */}
-			</div>
-
 			<Footer />
 		</div >
 	);

@@ -12,6 +12,7 @@
 
 .textBox{
     margin: 4vw 0 0 0;
+
     text-align: center;
     font-size: 2.5vw;
 
@@ -24,7 +25,7 @@
         font-weight: 800;
         font-size: 2.5vw;
         margin-bottom: 2vw;
-        color: #910250;
+        color: #1b2d53;
     }
 }
 
@@ -61,7 +62,7 @@
     display: flex;
     flex-direction: row;
 
-    margin-top: 2vw;
+    margin: 2vw 0 4vw 0 ;
     width: 80%;
 
     @media (max-width: 900px) {
