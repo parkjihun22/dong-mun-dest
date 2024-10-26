@@ -48,9 +48,9 @@ const LocationEnvironment1 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-           			<div>전혀 새로운 중흥S-클래스만의 마스터플랜, 특별한 삶과 우월한 가치를 누리다
+           			<div>전혀 새로운 평택동문디이시트만의 마스터플랜, 특별한 삶과 우월한 가치를 누리다
 					   </div>
-           		 	<div>브레인시티를 대표하는 첫번째 중흥 S클래스</div>
+           		 	<div>품격과 자부심이 느껴지는 단지 특화설계</div>
          		</div>
 
 			<img src={page1} className={styles.premiumImage} alt="premium-image-1" />
@@ -58,6 +58,21 @@ const LocationEnvironment1 = () => {
 			<div className={styles.commonBox}>
 				<div className={styles.notice}>
 					※ 상기 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 있을 수 있습니다.
+				</div>
+			<div className={styles.notice}>
+					※ 건물의 색채, 외관, 조경, 식재 및 보행로는 입주자의 이해를 돕기 위한 것으로 실제와 다소 차이가 있으며, 추후 인허가 과정 및 실제 시공 시 변경될 수 있습니다. 또한 구획선과 시설물의 위치 및 규모 역시 측량결과 및 각종 평가에 따라 시공 시 변경될 수 있습니다.
+				</div>
+			<div className={styles.notice}>
+					※ 사용검사 때와 달리 입주 후 교통량 증가 등 주변여건 변화로 소음이 심화될 경우에는 행정청, 사업주체 및 시공사에 이의제기 및 보상 요구를 할 수 없으므로 소음에 대한 내용은 반드시 숙지하시고 분양 계약을 하시기 바랍니다.
+				</div>
+			<div className={styles.notice}>
+					※ 연결녹지 및 보행자 도로는 관계기관의 여건에 따라 시공 시 시설물, 식재 계획, 레벨, 옹벽 등의 변경이 있을 수 있습니다.
+				</div>
+			<div className={styles.notice}>
+					※ 향후 입주 후 주변 건축물 및 도로공사로 인한 먼지, 소음, 통행 불편, 일조, 조망, 사생활권의 침해가 발생할 수 있습니다.
+				</div>
+			<div className={styles.notice}>
+					※ 본 홈페이지의 제작과정상 오탈자가 있을 수 있으므로 계약 시 반드시 확인하시기 바랍니다.
 				</div>
 			
 			</div>

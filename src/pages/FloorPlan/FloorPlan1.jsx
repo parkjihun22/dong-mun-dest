@@ -9,16 +9,14 @@ import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
 
 import page1 from "../../assets/FloorPlan/FloorPlan1/page1.jpg";
-import page2 from "../../assets/FloorPlan/FloorPlan1/page2.jpg";
-import page3 from "../../assets/FloorPlan/FloorPlan1/page3.jpg";
+
 
 const FloorPlan1 = () => {
 	const menuContents = [
-		{ title: "59A", url: "/FloorPlan/59A" },
-		{ title: "59B", url: "/FloorPlan/59B" },
-		{ title: "84A", url: "/FloorPlan/84A" },
-		{ title: "84B", url: "/FloorPlan/84B" },
-		{ title: "84C", url: "/FloorPlan/114A" },
+		{ title: "84A", url: "/FloorPlan/59A" },
+		{ title: "84B", url: "/FloorPlan/59B" },
+		{ title: "107A", url: "/FloorPlan/84A" },
+
 	
 	];
 	const [isScroll, setIsScroll] = useState(false);
@@ -58,11 +56,6 @@ const FloorPlan1 = () => {
 			<img className={styles.img1} src={page1} 
    	 			></img>
 
-			<img className={styles.img2} src={page2} 
-   	 			></img>
-
-			<img className={styles.img3} src={page3} 
-   	 			></img>
 
 			<div className={styles.commonBox}>
 				<div className={styles.notice}>

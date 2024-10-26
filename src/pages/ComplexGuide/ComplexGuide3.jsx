@@ -69,9 +69,7 @@ const ComplexGuide3 = () => {
 				<div className={styles.notice}>
 					※ 본 페이지의 면적, 수치, 가격, 동호표 등은 인쇄 및 편집과정에서 오류가 있을 수 있으니 계약 시 반드시 주택전시관에서 확인하시기 바랍니다.
 				</div>
-				<div className={styles.notice}>
-					※ 본 공사 시 옥상구조물 상부는 도장 시공을 하지 않습니다.
-				</div>
+		
 			</div>
 
 			<Footer />
