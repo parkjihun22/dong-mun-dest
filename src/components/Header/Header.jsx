@@ -11,6 +11,7 @@ import SlideMenu from "../../components/SlideMenu/SlideMenu";
 import logoImageHover from "../../assets/logo/mainlogo.png";
 import logoImage from "../../assets/logo/mainlogowhite.jpg";
 
+
 const menuArray = [
 	{
 		title: "브랜드",
@@ -147,7 +148,7 @@ const Header = ({ isChanged }) => {
 						</Link>
 
 						<div className={isChange ? styles.title : styles.scrolledTitle}>
-							평택화양동문디이스트
+							평택브레인시티푸르지오
 						</div>
 
 						<div className={styles.itemBox}>
@@ -173,7 +174,7 @@ const Header = ({ isChanged }) => {
 						</div>
 
 						<a href="https://naver.me/FWfnlWCx" className={styles.phoneNumber}>
-							<IoCall size={30} /> 1533-8848
+							<IoCall size={25} /> 1533-8848
 						</a>
 					</header>
 				)}
@@ -183,9 +184,9 @@ const Header = ({ isChanged }) => {
 
 				<div onClick={() => setIsMobileMenu(!isMobileMenu)}>
 					{!isMobileMenu ?
-						<AiOutlineMenu className={styles.icon} size={40} color="#053b02" />
+						<AiOutlineMenu className={styles.icon} size={25} color="#053b02" />
 						:
-						<IoCloseSharp className={styles.icon} size={50} color="#053b02" />
+						<IoCloseSharp className={styles.icon} size={25} color="#053b02" />
 					}
 				</div>
 				{isMobileMenu && <SlideMenu contents={menuArray} onClose={closeMobileMenu} />}
@@ -195,7 +196,7 @@ const Header = ({ isChanged }) => {
 				</Link>
 
 				<a href={'tel:1533-8848'}>
-					<IoCall className={styles.icon} size={30} color="#053b02" />
+					<IoCall className={styles.icon} size={25} color="#053b02" />
 				</a>
 
 			</div>
