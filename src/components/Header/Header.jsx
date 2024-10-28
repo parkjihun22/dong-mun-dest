@@ -133,7 +133,7 @@ const Header = ({ isChanged }) => {
 						</div>
 
 						<a href="https://naver.me/FWfnlWCx" className={isChange ? styles.phoneNumber : styles.scrolledPhoneNumber}>
-							<IoCall size={20} /> 1533-8848
+							<IoCall size={30} /> 1533-8848
 						</a>
 					</header>
 				) : (
@@ -147,7 +147,7 @@ const Header = ({ isChanged }) => {
 						</Link>
 
 						<div className={isChange ? styles.title : styles.scrolledTitle}>
-							『 평택 브레인시티 한신더휴 』
+							평택화양동문디이스트
 						</div>
 
 						<div className={styles.itemBox}>
@@ -173,7 +173,7 @@ const Header = ({ isChanged }) => {
 						</div>
 
 						<a href="https://naver.me/FWfnlWCx" className={styles.phoneNumber}>
-							<IoCall size={20} /> 1533-8848
+							<IoCall size={30} /> 1533-8848
 						</a>
 					</header>
 				)}
@@ -183,9 +183,9 @@ const Header = ({ isChanged }) => {
 
 				<div onClick={() => setIsMobileMenu(!isMobileMenu)}>
 					{!isMobileMenu ?
-						<AiOutlineMenu className={styles.icon} size={20} color="#053b02" />
+						<AiOutlineMenu className={styles.icon} size={40} color="#053b02" />
 						:
-						<IoCloseSharp className={styles.icon} size={20} color="#053b02" />
+						<IoCloseSharp className={styles.icon} size={50} color="#053b02" />
 					}
 				</div>
 				{isMobileMenu && <SlideMenu contents={menuArray} onClose={closeMobileMenu} />}
@@ -195,7 +195,7 @@ const Header = ({ isChanged }) => {
 				</Link>
 
 				<a href={'tel:1533-8848'}>
-					<IoCall className={styles.icon} size={20} color="#053b02" />
+					<IoCall className={styles.icon} size={30} color="#053b02" />
 				</a>
 
 			</div>
