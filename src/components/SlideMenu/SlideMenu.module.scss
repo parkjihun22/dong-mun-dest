@@ -1,7 +1,8 @@
 .container {
+    font-size: 0.9rem;
     display: flex;
     flex-direction: column;
-    width: 50%; // 모바일 화면의 50%를 차지
+    width: 60%; // 모바일 화면의 50%를 차지
     position: fixed;
     top: 15vw; // 상단 여백 유지
     left: 0;
@@ -71,7 +72,7 @@
     .linkItem {
         color: #1b2d53; // 글자색 변경 (원하는 색상으로 조정)
         font-weight: bold; // 글자 굵기 변경
-        font-size: 1.1rem; // 글자 크기 조정
+        font-size: 0.9rem; // 글자 크기 조정
     }
 
     &:hover {
