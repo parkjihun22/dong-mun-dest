@@ -22,10 +22,10 @@ import page2 from "../../assets/LocationEnvironment/LocationEnvironment1/page2.j
 
 const LocationSection = [
 	{ img: section2Image1, titleText: "다양한 미래가치<br />직주근접 프리미엄", contentText: "평택호 관광단지,경기경제자유구역(BIX),자유무역지구<br /> 안중역 11월 개통으로 눈부신 내일" },
-	{ img: section2Image2, titleText: "도보10분권으로<br />의세권을 누리릴 수 있는 프리미엄", contentText: "첨단의료 복합타운<br /> 500병상 규모로 2027년 개원 예정<br /> 복합공공청사,중앙공원등으로 편리한 생활" },
+	{ img: section2Image2, titleText: "도보권으로<br />의세권을 누리릴 수 있는 프리미엄", contentText: "첨단의료 복합타운<br /> 500병상 규모로 2027년 개원 예정<br /> 복합공공청사,중앙공원등으로 편리한 생활" },
 	{ img: section2Image3, titleText: "수도권 시내·외를 더 빠르게<br />광역으로 통하는 특급 교통", contentText: "안중역(KTX 직결예정),평택지제역(GTX A·C연장예정)<br />서해선 복선전철, 38번국도, 서해안고속도로 인접" },
 	{ img: section2Image4, titleText: "학교, 쇼핑,병원, 문화를 더 가깝게 한걸음에<br />모두 갖춘 중심생활", contentText: "단지 5분권내 초등학교(예정)와 다수의 초·중·고교(예정) <br /> 홈플러스, 중심상업지구 인접" },
-	{ img: section2Image5, titleText: "THE EST 품격있는 주거공간 프리미엄", contentText: "전세대 알파룸 설계로 활용도 높은 주거공간<br />서해조망권으로 품격있는 주거공간" },
+	{ img: section2Image5, titleText: "THE EST 품격있는 주거공간 프리미엄", contentText: "전세대 4BAY 설계로 활용도 높은 주거공간<br />서해조망권으로 품격있는 주거공간" },
 	{ img: section2Image6, titleText: "여의도 규모급 평택 화양지구 ", contentText: "평택 새로운 중심이 될 약 2만세대<br />국내 최대규모 민간도시 개발사업 화양지구" },
 ]
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useMediaQuery } from 'react-responsive';
 import { Link } from "react-router-dom";
 import { IoCall, IoCloseSharp } from "react-icons/io5";
@@ -48,8 +48,6 @@ const menuArray = [
 			{ subTitle: "84A", subUrl: "/FloorPlan/59A" },
 			{ subTitle: "84B", subUrl: "/FloorPlan/59B" },
 			{ subTitle: "107A", subUrl: "/FloorPlan/84A" },
-
-			
 		],
 	},
 	{
@@ -65,7 +63,7 @@ const menuArray = [
 const Header = ({ isChanged }) => {
 	const [isChange, setIsChange] = useState(isChanged);
 	const [isMenu, setIsMenu] = useState(false);
-	const [isMobileMenu, setIsMobileMenu] = useState(false); // 모바일 메뉴 상태
+	const [isMobileMenu, setIsMobileMenu] = useState(false);
 	const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
 
 	useEffect(() => {
@@ -77,12 +75,38 @@ const Header = ({ isChanged }) => {
 	}, [isMenu])
 
 	const handleMouseEnter = () => {
-		setIsMenu(!isMenu);
+		setIsMenu(true);
 	};
 
 	const handleMouseLeave = () => {
-		setIsMenu(!isMenu);
+		setIsMenu(false);
 	};
+
+	const closeMobileMenu = useCallback(() => {
+		setIsMobileMenu(false);
+	}, []);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (isMobileMenu) {
+				closeMobileMenu();
+			}
+		};
+
+		const handleClickOutside = (event) => {
+			if (isMobileMenu && !event.target.closest(`.${styles.mobileHeader}`)) {
+				closeMobileMenu();
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		document.addEventListener('mousedown', handleClickOutside);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+			document.removeEventListener('mousedown', handleClickOutside);
+		};
+	}, [isMobileMenu, closeMobileMenu]);
 
 	return (
 		<>{!isMobile ? (
@@ -96,8 +120,6 @@ const Header = ({ isChanged }) => {
 						<Link to='/'>
 							<img src={isChange ? logoImageHover : logoImage} alt="jungheung-class-mainLogo-image" />
 						</Link>
-
-						
 
 						<div className={styles.itemBox}>
 							<a href="https://naver.me/FWfnlWCx" className={isChange ? styles.linkItem : styles.scrolledLinkItem}>
@@ -134,16 +156,14 @@ const Header = ({ isChanged }) => {
 							</a>
 							{menuArray.map((menu, idx) => (
 								<div key={idx} className={styles.detailItemBox}>
-									{/* 첫 번째 메뉴 아이템 */}
 									<Link to={menu.subMenu[0].subUrl} className={styles.item}>
 										{menu.title}
 									</Link>
 
-									{/* 하위 메뉴 아이템 */}
 									<div className={styles.secondItemBox}>
 										{menu.subMenu.map((submenu, subIdx) => (
 											<Link key={subIdx} to={submenu.subUrl} className={styles.subitem}>
-												{submenu.subTitle} {/* title -> subTitle로 변경 */}
+												{submenu.subTitle}
 											</Link>
 										))}
 									</div>
@@ -168,7 +188,7 @@ const Header = ({ isChanged }) => {
 						<IoCloseSharp className={styles.icon} size={20} color="#053b02" />
 					}
 				</div>
-				{isMobileMenu && <SlideMenu contents={menuArray} />}
+				{isMobileMenu && <SlideMenu contents={menuArray} onClose={closeMobileMenu} />}
 
 				<Link to='/'>
 					<img src={logoImage} alt="jungheung-class-mainLogo-image" className={styles.logo} />
@@ -181,12 +201,7 @@ const Header = ({ isChanged }) => {
 			</div>
 		)}
 		</>
-
 	);
 };
 
 export default Header;
-
-// {
-//
-// }
