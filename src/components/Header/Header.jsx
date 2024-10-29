@@ -123,7 +123,7 @@ const Header = ({ isChanged }) => {
 						</Link>
 
 						<div className={styles.itemBox}>
-							<a href="https://naver.me/FWfnlWCx" className={isChange ? styles.linkItem : styles.scrolledLinkItem}>
+							<a href="https://naver.me/FbOagsfY" className={isChange ? styles.linkItem : styles.scrolledLinkItem}>
 								모바일 상담예약
 							</a>
 							{menuArray.map((menu, idx) => (
@@ -133,7 +133,7 @@ const Header = ({ isChanged }) => {
 							))}
 						</div>
 
-						<a href="https://naver.me/FWfnlWCx" className={isChange ? styles.phoneNumber : styles.scrolledPhoneNumber}>
+						<a href="https://naver.me/FbOagsfY" className={isChange ? styles.phoneNumber : styles.scrolledPhoneNumber}>
 							<IoCall size={30} /> 1533-8848
 						</a>
 					</header>
@@ -148,11 +148,11 @@ const Header = ({ isChanged }) => {
 						</Link>
 
 						<div className={isChange ? styles.title : styles.scrolledTitle}>
-							평택브레인시티푸르지오
+							평택화양동문디이스트
 						</div>
 
 						<div className={styles.itemBox}>
-							<a href="https://naver.me/FWfnlWCx" className={styles.linkItem}>
+							<a href="https://naver.me/FbOagsfY" className={styles.linkItem}>
 								모바일 상담예약
 							</a>
 							{menuArray.map((menu, idx) => (
@@ -173,7 +173,7 @@ const Header = ({ isChanged }) => {
 
 						</div>
 
-						<a href="https://naver.me/FWfnlWCx" className={styles.phoneNumber}>
+						<a href="https://naver.me/FbOagsfY" className={styles.phoneNumber}>
 							<IoCall size={25} /> 1533-8848
 						</a>
 					</header>
@@ -184,9 +184,9 @@ const Header = ({ isChanged }) => {
 
 				<div onClick={() => setIsMobileMenu(!isMobileMenu)}>
 					{!isMobileMenu ?
-						<AiOutlineMenu className={styles.icon} size={25} color="#053b02" />
+						<AiOutlineMenu className={styles.icon} size={25} color="#1b2d53" />
 						:
-						<IoCloseSharp className={styles.icon} size={25} color="#053b02" />
+						<IoCloseSharp className={styles.icon} size={25} color="#1b2d53" />
 					}
 				</div>
 				{isMobileMenu && <SlideMenu contents={menuArray} onClose={closeMobileMenu} />}
@@ -196,7 +196,7 @@ const Header = ({ isChanged }) => {
 				</Link>
 
 				<a href={'tel:1533-8848'}>
-					<IoCall className={styles.icon} size={25} color="#053b02" />
+					<IoCall className={styles.icon} size={25} color="#1b2d53" />
 				</a>
 
 			</div>

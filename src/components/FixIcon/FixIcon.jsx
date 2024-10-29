@@ -21,7 +21,7 @@ const FixIcon = ({ type }) => {
             );
         } else {
             return (
-                <a href="https://naver.me/xs350ipu" target="_blank" rel="noopener noreferrer" className={`${styles.container} ${type === "absolute" ? styles.absolute : styles.fixed}`}>
+                <a href="https://naver.me/FbOagsfY" target="_blank" rel="noopener noreferrer" className={`${styles.container} ${type === "absolute" ? styles.absolute : styles.fixed}`}>
                     <div className={styles.circlebox}>관심고객<br />등록</div>
                     <img src={movingCircle} alt="circle animation" />
                 </a>
