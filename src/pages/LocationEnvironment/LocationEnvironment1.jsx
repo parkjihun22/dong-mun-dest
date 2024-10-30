@@ -63,7 +63,7 @@ const LocationEnvironment1 = () => {
 				<meta name="description" content="평택 서부권의 중심에 위치한 동문디이스트는 우수한 입지 조건과 탁월한 접근성을 자랑합니다. 
 				주변의 교육, 쇼핑, 엔터테인먼트 시설과의 근접성이 일상의 편리함을 보장합니다" />
 				<meta name="keywords" content="평택화양동문디이스트, 화양지구동문디이스트, 화양동문디이스트,평택푸르지오,평택화양푸르지오,화양신도시,신영지웰평택화양, 평택동문디이스트, 평택동문디이스트모델하우스,평택화양동문디이스트모델하우스" />
-				<link rel="canonical" href="https://www.bunyang-114.com/LocationEnvironment/intro" />
+				<link rel="canonical" href="http://www.114modelhouse.co.kr/LocationEnvironment/intro" />
 			</Helmet>
 
 			<Header isChanged={isScroll} />

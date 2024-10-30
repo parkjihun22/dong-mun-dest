@@ -48,7 +48,7 @@ const ComplexGuide3 = () => {
 				<meta name="description" content="평택 화양 동문디이스트 커뮤니티센터에서 다양한 생활 편의 시설을 이용해보세요. 
 					헬스장, 독서실, 카페 등 다양한 시설이 마련되어 있어 주민들의 편리한 생활을 돕습니다" />
 				<meta name="keywords" content="평택화양동문디이스트, 화양지구동문디이스트, 화양동문디이스트,평택푸르지오,평택화양푸르지오,화양신도시,신영지웰평택화양, 평택동문디이스트, 평택동문디이스트모델하우스,평택화양동문디이스트모델하우스" />
-				<link rel="canonical" href="https://www.bunyang-114.com/ComplexGuide/community" />
+				<link rel="canonical" href="http://www.114modelhouse.co.kr/ComplexGuide/community" />
 			</Helmet>
 
 			<Header isChanged={isScroll} />

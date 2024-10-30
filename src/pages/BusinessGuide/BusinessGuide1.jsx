@@ -52,7 +52,7 @@ const BusinessGuide1 = () => {
 				<meta name="description" content="평택 화양 동문디이스트의 사업개요를 통해 프로젝트의 전반적인 개요와 개발 비전을 확인하세요. 
 				최신 건축 기술과 혁신적인 설계를 통해 쾌적한 생활 환경을 제공합니다." />
 				<meta name="keywords" content="평택화양동문디이스트, 화양지구동문디이스트, 화양동문디이스트,평택푸르지오,평택화양푸르지오,화양신도시,신영지웰평택화양, 평택동문디이스트, 평택동문디이스트모델하우스,평택화양동문디이스트모델하우스" />
-				<link rel="canonical" href="https://www.bunyang-114.com/BusinessGuide/intro" />
+				<link rel="canonical" href="http://www.114modelhouse.co.kr/BusinessGuide/intro" />
 			</Helmet>
 
 
