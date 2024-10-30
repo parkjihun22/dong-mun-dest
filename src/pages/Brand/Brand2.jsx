@@ -63,7 +63,7 @@ const Brand2 = () => {
 			
 			{ <div className={styles.videoContainer}>
 				<YouTube
-					videoId="sX3YcES877Q"
+					videoId="9LZuzeVJqQM"
 					opts={{
 						width: isMobile ? "450" : "1400",  // 모바일에서는 100%로 설정
 						height: isMobile ? "300" : "700", // 모바일 높이를 고정
