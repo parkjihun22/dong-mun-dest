@@ -7,6 +7,7 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
+import { Helmet } from "react-helmet-async";
 
 import page1 from "../../assets/BusinessGuide/BusinessGuide2/page1.jpg"
 
@@ -42,6 +43,13 @@ const BusinessGuide2 = () => {
 
 	return (
 		<div className={styles.container}>
+			<Helmet>
+				<title>분양일정 - 평택 화양 동문디이스트</title>
+				<meta name="description" content="평택화양동문디이시트의 분양일정과 주요 청약 정보를 확인하세요. 
+				새로운 주거 단지에서 기회를 잡기 위한 모든 필요한 날짜와 절차에 대해 자세히 안내합니다." />
+				<meta name="keywords" content="평택화양동문디이스트, 화양지구동문디이스트, 화양동문디이스트,평택푸르지오,평택화양푸르지오,화양신도시,신영지웰평택화양, 평택동문디이스트, 평택동문디이스트모델하우스,평택화양동문디이스트모델하우스" />
+				<link rel="canonical" href="https://www.bunyang-114.com/BusinessGuide/plan" />
+			</Helmet>
 			
 			<Header isChanged={isScroll} />
 			<FixIcon />

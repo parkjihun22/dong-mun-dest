@@ -7,6 +7,7 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
+import { Helmet } from "react-helmet-async";
 import page1 from "../../assets/BusinessGuide/BusinessGuide3/page1.jpg";
 //import Ready from "../../components/Ready/Ready";
 
@@ -45,6 +46,13 @@ const BusinessGuide2 = () => {
 
 	return (
 		<div className={styles.container}>
+			<Helmet>
+				<title>계약서류안내 - 평택 화양 동문디이스트</title>
+				<meta name="description" content="평택화양동문디이스트의 분양일정을 통해 중요한 분양 일정을 확인하세요. 
+				분양 일정과 필요한 모든 정보를 제공하여 성공적인 분양을 지원합니다." />
+				<meta name="keywords" content="평택화양동문디이스트, 화양지구동문디이스트, 화양동문디이스트,평택푸르지오,평택화양푸르지오,화양신도시,신영지웰평택화양, 평택동문디이스트, 평택동문디이스트모델하우스,평택화양동문디이스트모델하우스" />
+				<link rel="canonical" href="https://www.bunyang-114.com/BusinessGuide/documents" />
+			</Helmet>
 
 			<Header isChanged={isScroll} />
 			<FixIcon />

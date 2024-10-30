@@ -7,6 +7,7 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
+import { Helmet } from "react-helmet-async";
 
 import page1 from "../../assets/FloorPlan/FloorPlan4/page1.jpg";
 import page2 from "../../assets/FloorPlan/FloorPlan4/page2.jpg";

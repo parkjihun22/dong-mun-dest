@@ -9,6 +9,7 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
+import { Helmet } from "react-helmet-async";
 
 const Brand2 = () => {
 	const menuContents = [{ title: "브랜드 소개", url: "/brand/intro" }, { title: "홍보 영상", url: "/brand/video" }]
@@ -40,6 +41,12 @@ const Brand2 = () => {
 
 	return (
 		<div className={styles.container}>
+			<Helmet>
+				<title>홍보 영상 - 평택 화양 동문디이스트</title>
+				<meta name="description" content="평택 화양 동문디이스트의 홍보 영상을 확인해보세요" />
+				<meta name="keywords" content="평택화양동문디이스트, 화양지구동문디이스트, 화양동문디이스트,평택푸르지오,평택화양푸르지오,화양신도시,신영지웰평택화양, 평택동문디이스트, 평택동문디이스트모델하우스,평택화양동문디이스트모델하우스" />
+				<link rel="canonical" href="https://www.bunyang-114.com/brand/video" />
+			</Helmet>
 
 			<Header isChanged={isScroll} />
 			<FixIcon />

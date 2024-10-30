@@ -7,6 +7,7 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
+import { Helmet } from "react-helmet-async";
 
 import LocationSectionBox from "../../components/LocationSectionBox/LocationSectionBox";
 
@@ -57,6 +58,13 @@ const LocationEnvironment1 = () => {
 
 	return (
 		<div className={styles.container}>
+			<Helmet>
+				<title>입지안내 - 평택 화양 동문디이스트</title>
+				<meta name="description" content="평택 서부권의 중심에 위치한 동문디이스트는 우수한 입지 조건과 탁월한 접근성을 자랑합니다. 
+				주변의 교육, 쇼핑, 엔터테인먼트 시설과의 근접성이 일상의 편리함을 보장합니다" />
+				<meta name="keywords" content="평택화양동문디이스트, 화양지구동문디이스트, 화양동문디이스트,평택푸르지오,평택화양푸르지오,화양신도시,신영지웰평택화양, 평택동문디이스트, 평택동문디이스트모델하우스,평택화양동문디이스트모델하우스" />
+				<link rel="canonical" href="https://www.bunyang-114.com/LocationEnvironment/intro" />
+			</Helmet>
 
 			<Header isChanged={isScroll} />
 			<FixIcon />

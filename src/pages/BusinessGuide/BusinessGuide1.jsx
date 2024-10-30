@@ -8,6 +8,7 @@ import MenuBar from "../../components/MenuBar/MenuBar";
 import Footer from "../../components/Footer/Footer";
 import Bener from "../../components/Bener/Bener";
 import FixIcon from "../../components/FixIcon/FixIcon";
+import { Helmet } from "react-helmet-async";
 import page1 from "../../assets/BusinessGuide/BusinessGuide1/page1.jpg";
 import tableImage from "../../assets/BusinessGuide/BusinessGuide1/tableImage.jpg";
 
@@ -46,6 +47,16 @@ const BusinessGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
+			<Helmet>
+				<title>사업안내 - 평택 화양 동문디이스트</title>
+				<meta name="description" content="평택 화양 동문디이스트의 사업개요를 통해 프로젝트의 전반적인 개요와 개발 비전을 확인하세요. 
+				최신 건축 기술과 혁신적인 설계를 통해 쾌적한 생활 환경을 제공합니다." />
+				<meta name="keywords" content="평택화양동문디이스트, 화양지구동문디이스트, 화양동문디이스트,평택푸르지오,평택화양푸르지오,화양신도시,신영지웰평택화양, 평택동문디이스트, 평택동문디이스트모델하우스,평택화양동문디이스트모델하우스" />
+				<link rel="canonical" href="https://www.bunyang-114.com/BusinessGuide/intro" />
+			</Helmet>
+
+
+
 			<Header isChanged={isScroll} />
 			<FixIcon />
 			<Bener title="사업개요" />
