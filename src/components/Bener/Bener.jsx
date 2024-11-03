@@ -21,9 +21,9 @@ const contents = (text) => {
      if (text === '브랜드 소개') {
         return (
             <>
-                <div className={styles.text}>지친 하루를 마치고 가장 나에 가까운 본연의 모습으로 돌아온 중흥S클래스 입니다.</div>
-                <div className={styles.text}>평택 브레인시티 중흥S클래스의 프리미엄</div>
-                <div className={styles.text}>NO.1 브랜드가 화양 동문디이스트와 함께합니다.</div>
+                <div className={styles.text}>지친 하루를 마치고 가장 나에 가까운 본연의 모습으로 돌아온 평택화양동문디이스트 입니다.</div>
+                <div className={styles.text}>평택 브레인시티 동문건설의 프리미엄</div>
+                <div className={styles.text}>NO.1 브랜드가 평택 화양 동문디이스트와 함께합니다.</div>
             </>
         )
     }
