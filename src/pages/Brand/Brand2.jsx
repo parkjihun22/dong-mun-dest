@@ -56,8 +56,8 @@ const Brand2 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-				<div>평택 브레인시티 눈부신 가치 위에</div>
-				<div>평택 브레인시티 중흥S클래스의 새로운 자부심으로 찾아옵니다.</div>
+				<div>평택 화양신도시 눈부신 가치 위에</div>
+				<div>평택 화양 동문디이스트의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
 			
