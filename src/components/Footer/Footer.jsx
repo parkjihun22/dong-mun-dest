@@ -21,7 +21,7 @@ const Footer = () => {
 								추후 관계기관의 사정에 따라 변경 및 취소될 수 있으며, 이는 사업주체 및 시공사와 무관합니다.</div>
 
 							<div className={styles.text2}>COPYRIGHTⓒ 평택화양 동문디이스트 모델하우스. ALL RIGHTS RESERVED.</div>
-							<div className={styles.text3}>COPYRIGHTⓒ 광고주 : 박지훈 ALL RIGHTS RESERVED.</div>
+							<div className={styles.text3}>COPYRIGHTⓒ 대표자명 : 박지훈 ALL RIGHTS RESERVED.</div>
 						</div>
 
 						<a href="https://naver.me/FbOagsfY"><IoCall size={25} /> 1533-8848</a>

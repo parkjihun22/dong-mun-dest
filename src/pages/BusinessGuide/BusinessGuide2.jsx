@@ -57,9 +57,15 @@ const BusinessGuide2 = () => {
 			<Bener title="사업개요" />
 
 			<MenuBar contents={menuContents} />
+			<div className={styles.textBox}>
+				<div>평택 화양신도시에서 누리는 특별한 오션뷰 프리미엄</div>
+				<div>평택 화양 동문디이스트의 분양일정을 확인하세요</div>
+			</div>
+
+			
 
 			<img className={styles.img1} src={page1} 
-   	 			></img>
+   	 			></img>a
 
 
 		

@@ -60,6 +60,10 @@ const BusinessGuide2 = () => {
 			<Bener title="사업개요" />
 
 			<MenuBar contents={menuContents} />
+			<div className={styles.textBox}>
+				<div>평택 화양신도시에서 누리는 특별한 라이프 컬렉션</div>
+				<div>평택 화양 동문디이스트의 계약시 필요한 서류를 확인하세요.</div>
+			</div>
 			
 			<img className={styles.img2} src={page1} 
    	 			></img>
