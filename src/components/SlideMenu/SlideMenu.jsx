@@ -27,7 +27,7 @@ const SlideMenu = ({ contents, onClose }) => {
     return (
         <div className={styles.container} ref={menuRef}>
             <div className={`${styles.menuBtn} ${styles.mobileReservation}`}>
-                <a href="https://naver.me/xs350ipu" className={styles.linkItem} onClick={onClose}>
+                <a href="https://naver.me/FbOagsfY" className={styles.linkItem} onClick={onClose}>
                     모바일 방문예약
                 </a>
             </div>
