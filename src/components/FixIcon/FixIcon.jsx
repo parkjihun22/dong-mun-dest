@@ -39,7 +39,7 @@ const FixIcon = ({ type }) => {
             ) : (
                 <div>
                     <div className={styles.buttomBtnContainer}>
-                        <a className={styles.btn1} href="https://naver.me/xs350ipu">
+                        <a className={styles.btn1} href="https://naver.me/FbOagsfY">
                             <IoIosCheckboxOutline size={20} />
                             <div>방문예약</div>
                         </a>
