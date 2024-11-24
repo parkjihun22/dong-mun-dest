@@ -134,7 +134,7 @@ const Header = ({ isChanged }) => {
 						</div>
 
 						<a href="https://naver.me/FbOagsfY" className={isChange ? styles.phoneNumber : styles.scrolledPhoneNumber}>
-							<IoCall size={30} /> 1533-8848
+							<IoCall size={25} /> 1533-8848
 						</a>
 					</header>
 				) : (

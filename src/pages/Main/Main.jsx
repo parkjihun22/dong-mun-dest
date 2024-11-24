@@ -16,7 +16,7 @@ import section3_Image1 from "../../assets/Main/section3-img1.png";
 import section4_Image1 from "../../assets/Main/section4-img1.png";
 import section4_Image2 from "../../assets/Main/section4-img2.png";
 import section4_Image3 from "../../assets/Main/section4-img3.png";
-import section4_Image4 from "../../assets/Main/section4-img2.png";
+import section4_Image4 from "../../assets/Main/section4-img4.png";
 import section5_Image1 from "../../assets/Main/section5-img1.jpg";
 // import section4_Image2 from "../../assets/Main/section4-img2.jpg";
 // import section4_Image3 from "../../assets/Main/section4-img3.jpg";
@@ -32,7 +32,7 @@ const section4Contents = [
 			  국가산업단지 63만평(예정)<br /> 자동차클러스터(예정)<br />
 			  직주근접 첨단복합도시의 탄생`,
 		text2: `브레인시티내 평택항 개발과 국가산업단지<br />
-			  자동차 배터리첨단산업시설 개발예정 수혜단지로 주거환경 개선 기대`,
+			  자동차 배터리첨단산업시설 개발예정<br /> 수혜단지로 주거환경 개선 기대`,
 		link: "/BusinessGuide/intro",
 		linkText: "더 알아보기 >"
 	},
@@ -62,7 +62,7 @@ const section4Contents = [
 		title: "PREMIUM",
 		text1: `화양신도시 종합병원 도보5분 의세권 프리미엄`,
 		text2: `500병상 규모 최첨단 종합병원,<br /> 서부권 중심상업지구 도보5분권내 진입가능`,
-		link: "/LocationEnvironment/primium",
+		link: "/LocationEnvironment/intro",
 		linkText: "더 알아보기 >"
 	}
 ];
@@ -334,7 +334,8 @@ const Main = () => {
 								type={idx % 2 === 0 ? 'left' : 'right'}
 								titleImag={section.imgSrc}
 								title={section.title}
-								subText={section.text1}
+								subText1={section.text1}
+                				subText2={section.text2}
 							/>
 						))}
 					</div>

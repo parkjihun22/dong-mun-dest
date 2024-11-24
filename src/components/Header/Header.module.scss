@@ -18,7 +18,7 @@
 
     &.containerFirst {
         background-color: transparent;
-        border-bottom: 3px solid #1b2d53;
+        border-bottom: 1px solid #FFFFFF;
     }
 
     &.container {
@@ -29,13 +29,13 @@
     img {
         position: absolute;
         top: 5vh;
-        left: 2vw;
+        left: 2%;
         transform: translateY(-50%, -50%);
         width: 10vw;
         height: auto;
 
         @media (max-width: 900px) {
-            width: 8rem;    
+            width: 5rem;
         }
     }
 
@@ -57,19 +57,19 @@
     .itemBox {
         display: flex;
         flex-direction: row;
-        gap: 2rem; // 항목 간의 간격을 줄임
-        margin-right: 15vw;
+        gap: 0.8rem; // 항목 간의 간격을 줄임
+        margin-right: 13.5vw;
 
         .linkItem,
         .scrolledLinkItem {
             padding: 0.5vw 0; // 패딩 조정
             font-size: 1vw;
             border-bottom: 3px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
-            text-decoration: none; //    기본 밑줄 취소
-            color: #1b2d53; // 기본 글자색 설정
+            text-decoration: none; // 기본 밑줄 취소
+            color: #1b2d53; // 기본 글자색 설정 
 
             &:hover {
-                border-bottom: 3px solid #1b2d53; // hover 시 하단 border만 나타남
+                border-bottom: px solid #1b2d53; // hover 시 하단 border만 나타남
                 color: #1b2d53; // hover 시 글자색 변경
                 font-size: 1vw; // 크기 유지
                 font-weight: normal; // 두께를 일반으로 유지
@@ -77,7 +77,7 @@
         }
 
         .linkItem {
-            color: #1b2d53; // 기본 글자색 흰색
+            color: #FFFFFF; // 기본 글자색 흰색
         }
 
         .scrolledLinkItem {
@@ -102,8 +102,8 @@
         }
 
         .scrolledItem {
-            color: #1b2d53;
-            font-weight: normal;
+            color: #000000;
+            font-weight: 300;
         }
     }
 
@@ -111,16 +111,16 @@
     .scrolledPhoneNumber {
         position: absolute;
         top: 50%;
-        right: 2%;
+        right: 3%;
         transform: translate(0, -50%);
         text-align: center;
         font-family: "GmarketSansMedium";
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         text-decoration: none;
     }
 
     .phoneNumber {
-        color: #1b2d53;
+        color: #FFFFFF;
     }
 
     .scrolledPhoneNumber {
@@ -179,20 +179,19 @@
         top: 10%;
         display: flex;
         flex-direction: row;
-        gap: 0.5rem; // 항목 간의 간격을 줄임
-        margin-right: 15vw;
+        gap: 0.1vw; // 항목 간의 간격을 줄임x
+        margin-right: 13vw;
 
+        
         .linkItem {
             padding: 0.5vw 0;
-            font-size: 1.2vw;
-            border-bottom: 3px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
+            margin-right: 0.5vw;
+            font-size: 1vw;
+            border-bottom: 10px solid rgba(0, 0, 0, 0); // 초기 border-bottom 투명
             text-decoration: none; // 기본 밑줄 취소
             color: #1b2d53; // 기본 글자색 설정
-            font-weight: bold;
+            font-weight: 500;
 
-            &:hover {
-                border-bottom: 3px solid #1b2d53;
-            }
         }
 
         .detailItemBox {
@@ -206,8 +205,8 @@
                 padding: 0.5vw 0; // 패딩 조정
                 width: 5vw;
                 text-align: center;
-                font-size: 1.2vw;
-                font-weight: bold;
+                font-size: 1vw;
+                font-weight: 300;
                 border-bottom: 3px solid rgba(0, 0, 0, 0);
                 text-decoration: none;
                 color: #000000;
@@ -226,7 +225,7 @@
                     border-radius: 0.2vw;
                     text-align: center;
                     text-decoration: none;
-                    font-size: 1vw;
+                    font-size: 0.8vw;
                     color: #000000;
 
                     &:hover {
@@ -244,7 +243,7 @@
         right: 2%;
         text-align: center;
         font-family: "GmarketSansMedium";
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         font-weight: bold;
         text-decoration: none;
         color: #1b2d53;
