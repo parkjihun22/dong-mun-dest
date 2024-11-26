@@ -147,7 +147,7 @@ const Main = () => {
 					<Header isChanged={isScroll} />
 
 					<div className={styles.imageContainer}>
-						<img src={mainImage} className={styles.mainImage} />
+						<img src={mainImage} className={styles.mainImage} /> 
 						<div className={styles.mainImageTextBox}>
 							<div className={styles.mainImageText1}>평택의 새로운 중심 화양</div>
 							<div className={styles.mainImageText2}>안중역 프리미엄을<span> 누리는</span></div>
@@ -199,7 +199,7 @@ const Main = () => {
 								</div>
 							</div>
 
-							<img src={section2_Image1} alt="" />
+							<img src={section2_Image1} alt="mainimage-1" />
 						</div>
 					</div>
 
@@ -212,7 +212,7 @@ const Main = () => {
 								<div className={`${styles.text4} fadeUpRepeat`}>살수록 자부심이 차원이 다른 <br />프리미엄 주거라이프를 실현합니다</div>
 								<div className={`${styles.text5} fadeUpRepeat`}>주거의 품격과 가치를 높이는 <span>특화설계</span> <br />안전한 이동을 위한 세심한 <span>단지설계</span> <br />편리한 생활을 위한 최적의 <span>공간설계</span></div>
 							</div>
-							<img src={section3_Image1} />
+							<img src={section3_Image1} alt="mainimage-2" />
 						</div>
 					</div>
 
@@ -235,7 +235,7 @@ const Main = () => {
 					<div className={styles.section}>
 						<div className={styles.section5}>
 							<div className={styles.imageBox}>
-								<img src={section5_Image1} />
+								<img src={section5_Image1} alt="mainimage-3" />
 
 								<div className={styles.text1}>평택 화양 동문디이스트 </div>
 								<div className={styles.text2}>THE NATURAL NOBILITY</div>
@@ -305,7 +305,7 @@ const Main = () => {
 							</div>
 						</div>
 
-						<img src={section2_Image1} alt="" />
+						<img src={section2_Image1} alt="mainimage-4" />
 					</div>
 					<div className={styles.container3}>
 						<div className={styles.textbox}>
@@ -350,7 +350,7 @@ const Main = () => {
 
 					<div className={styles.container2}>
 						<div>
-							<img src={section1_Image1} />
+							<img src={section1_Image1} alt="mainimage-5" />
 							<Link to="brand/intro" className={styles.btn}> 브랜드 소개 {'>'}</Link>
 						</div>
 					</div>
