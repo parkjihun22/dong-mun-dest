@@ -40,14 +40,7 @@ const LocationEnvironment1 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<title>프리미엄 - 평택 화양 동문디이스트</title>
-				<meta name="description" content="고급 마감재와 세련된 디자인이 돋보이는 평택화양동문디이스트는 프리미엄 주거 공간을 제공합니다. 
-				탁월한 건축 품질과 고급 시설이 조화롭게 어우러져 있습니다." />
-				<meta name="keywords" content="평택화양동문디이스트" />
-				<link rel="canonical" href="http://www.114modelhouse.co.kr/LocationEnvironment/primium" />
-			</Helmet>
-
+			
 			<Header isChanged={isScroll} />
 			<FixIcon />
 

@@ -43,13 +43,7 @@ const ComplexGuide3 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<title>커뮤니티 - 평택 화양 동문디이스트</title>
-				<meta name="description" content="평택 화양 동문디이스트 커뮤니티센터에서 다양한 생활 편의 시설을 이용해보세요. 
-					헬스장, 독서실, 카페 등 다양한 시설이 마련되어 있어 주민들의 편리한 생활을 돕습니다" />
-				<meta name="keywords" content="평택화양동문디이스트" />
-				<link rel="canonical" href="http://www.114modelhouse.co.kr/ComplexGuide/community" />
-			</Helmet>
+			
 
 			<Header isChanged={isScroll} />
 			<FixIcon />

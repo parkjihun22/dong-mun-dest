@@ -46,13 +46,7 @@ const BusinessGuide2 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<title>계약서류안내 - 평택 화양 동문디이스트</title>
-				<meta name="description" content="평택화양동문디이스트의 분양일정을 통해 중요한 분양 일정을 확인하세요. 
-				분양 일정과 필요한 모든 정보를 제공하여 성공적인 분양을 지원합니다." />
-				<meta name="keywords" content="평택화양동문디이스트" />
-				<link rel="canonical" href="http://www.114modelhouse.co.kr/BusinessGuide/documents" />
-			</Helmet>
+			
 
 			<Header isChanged={isScroll} />
 			<FixIcon />

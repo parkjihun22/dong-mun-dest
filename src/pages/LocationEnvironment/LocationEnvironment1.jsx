@@ -58,13 +58,7 @@ const LocationEnvironment1 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<title>입지안내 - 평택 화양 동문디이스트</title>
-				<meta name="description" content="평택 서부권의 중심에 위치한 동문디이스트는 우수한 입지 조건과 탁월한 접근성을 자랑합니다. 
-				주변의 교육, 쇼핑, 엔터테인먼트 시설과의 근접성이 일상의 편리함을 보장합니다" />
-				<meta name="keywords" content="평택화양동문디이스트" />
-				<link rel="canonical" href="http://www.114modelhouse.co.kr/LocationEnvironment/intro" />
-			</Helmet>
+			
 
 			<Header isChanged={isScroll} />
 			<FixIcon />

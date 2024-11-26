@@ -43,13 +43,7 @@ const ComplexGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<title>호수배치도 - 평택 화양 동문디이스트</title>
-				<meta name="description" content="평택화양동문디이스트의 세심하게 계획된 동호수배치도를 통해 각 유닛의 위치와 조망권을 확인하세요. 
-				효율적인 동선과 최적의 개인 공간을 제공합니다." />
-				<meta name="keywords" content="평택화양동문디이스트" />
-				<link rel="canonical" href="http://www.114modelhouse.co.kr/ComplexGuide/detailintro" />
-			</Helmet>
+			
 
 			<Header isChanged={isScroll} />
 			<FixIcon />

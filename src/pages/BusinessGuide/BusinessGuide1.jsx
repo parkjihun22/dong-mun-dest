@@ -47,13 +47,7 @@ const BusinessGuide1 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<title>사업안내 - 평택 화양 동문디이스트</title>
-				<meta name="description" content="평택 화양 동문디이스트의 사업개요를 통해 프로젝트의 전반적인 개요와 개발 비전을 확인하세요. 
-				최신 건축 기술과 혁신적인 설계를 통해 쾌적한 생활 환경을 제공합니다." />
-				<meta name="keywords" content="평택화양동문디이스트" />
-				<link rel="canonical" href="http://www.114modelhouse.co.kr/BusinessGuide/intro" />
-			</Helmet>
+			
 
 
 

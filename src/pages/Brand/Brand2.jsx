@@ -41,13 +41,7 @@ const Brand2 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<title>홍보 영상 - 평택 화양 동문디이스트</title>
-				<meta name="description" content="평택 화양 동문디이스트의 홍보 영상을 확인해보세요" />
-				<meta name="keywords" content="평택화양동문디이스트" />
-				<link rel="canonical" href="http://www.114modelhouse.co.kr/Brand/video" />
-			</Helmet>
-
+			
 			<Header isChanged={isScroll} />
 			<FixIcon />
 
