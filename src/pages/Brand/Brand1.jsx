@@ -44,7 +44,7 @@ const Brand1 = () => {
 			<Helmet>
 				<title>브랜드 소개 - 평택 화양 동문디이스트</title>
 				<meta name="description" content="평택화양동문디이스트는 품질과 혁신을 바탕으로 고객에게 최상의 주거 경험을 제공하는 브랜드입니다. 세심한 주거 설계와 고객 중심의 서비스를 통해 평택 브레인시티의 새로운 주거 문화를 선도합니다." />
-				<meta name="keywords" content="평택화양동문디이스트, 화양지구동문디이스트, 화양동문디이스트,평택푸르지오,평택화양푸르지오,화양신도시,신영지웰평택화양, 평택동문디이스트, 평택동문디이스트모델하우스,평택화양동문디이스트모델하우스" />
+				<meta name="keywords" content="평택화양동문디이스트" />
 				<link rel="canonical" href="http://www.114modelhouse.co.kr/Brand/intro" />
 			</Helmet>
 			

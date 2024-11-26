@@ -44,14 +44,6 @@ const FloorPlan2 = () => {
 
 	return (
 		<div className={styles.container}>
-			<Helmet>
-				<title>평면안내 84B - 평택 화양 동문디이스트</title>
-				<meta name="description" content="평택 화양 동문디이스트의 유니트는 현대적인 설계와 효율적인 공간 활용을 특징으로 합니다. 
-				각 유닛은 세련된 인테리어와 최신 편의 시설을 갖추고 있어, 최적의 주거 경험을 제공합니다. 
-				다양한 평면 옵션을 통해 개인의 라이프스타일과 필요에 맞춰 선택할 수 있습니다." />
-				<meta name="keywords" content="평택화양동문디이스트, 화양지구동문디이스트, 화양동문디이스트,평택푸르지오,평택화양푸르지오,화양신도시,신영지웰평택화양, 평택동문디이스트, 평택동문디이스트모델하우스,평택화양동문디이스트모델하우스" />
-				<link rel="canonical" href="http://www.114modelhouse.co.kr/FloorPlan/59B" />
-			</Helmet>
 			
 			<Header isChanged={isScroll} />
 			<FixIcon />
