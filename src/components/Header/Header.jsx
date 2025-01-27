@@ -192,7 +192,7 @@ const Header = ({ isChanged }) => {
 				{isMobileMenu && <SlideMenu contents={menuArray} onClose={closeMobileMenu} />}
 
 				<Link to='/'>
-					<img src={logoImage} alt="jungheung-class-mainLogo-image" className={styles.logo} />
+					<img src={logoImage} alt="동문디이스트-mainLogo-image" className={styles.logo} />
 				</Link>
 
 				<a href={'tel:1533-8848'}>

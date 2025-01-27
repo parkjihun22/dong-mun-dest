@@ -21,7 +21,6 @@ const Footer = () => {
 								추후 관계기관의 사정에 따라 변경 및 취소될 수 있으며, 이는 사업주체 및 시공사와 무관합니다.</div>
 
 							<div className={styles.text2}>COPYRIGHTⓒ 평택화양 동문디이스트 모델하우스. ALL RIGHTS RESERVED.</div>
-							<div className={styles.text3}> COPYRIGHTⓒ 대표자명: 박지훈 / eyeful31@naver.com </div>
 						
 
 						</div>
@@ -40,7 +39,6 @@ const Footer = () => {
 							<div className={styles.text1}>※ 본 사이트에 사용된 내용 및 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.</div>
 							<div className={styles.text1}>※ 본 사이트에 기재된 개발계획과 공통계획에 과한 사항은 관계기관의 보도자료를 참조한 것으로 <br />
 								추후 관계기관의 사정에 따라 변경 및 취소될 수 있으며, 이는 사업주체 및 시공사와 무관합니다.</div>
-							<div className={styles.text3}> COPYRIGHTⓒ 대표자명: 박지훈 / eyeful31@naver.com </div>
 
 							<div className={styles.text2}>COPYRIGHTⓒ 평택화양 동문디이스트 모델하우스. ALL RIGHTS RESERVED.</div>
 						</div>
