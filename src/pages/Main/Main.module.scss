@@ -2,98 +2,121 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    display: block; // inline-block 대신 block 사용 (이미지 차지하는 공간 문제 해결)
-
+    display: block;
+    overflow: hidden; /* 이미지가 화면을 벗어날 때 숨김 */
+  
     .mainImage {
-        width: 100%;
-        height: 100vh;
-        display: block;
+      width: 100%;
+      height: 100vh;
+      display: block;
+      opacity: 0;
+      transform: scale(1.1); /* 초기 상태에서 약간 커짐 */
+      animation: zoomIn 2s ease-out forwards; /* 이미지 줌 인 효과 */
     }
-
+  
     .mainImageTextBox {
-        position: absolute;
-        top: 20vw;
-        left: 75vw;
-        transform: translate(5%, -50%);
-
-        margin-left: 3vw;
-        color: #ffffff;
-        display: flex;
-        flex-direction: column; /* 변경된 부분 */
-        align-items: center; /* 변경된 부분 */
-        text-align: left; /* 텍스트 가운대로 정렬 */
-
-        .mainImageText1 {
-            color: #1b2d53;
-            font-weight: 800;
-            font-size: 1.5vw;
-
+      font-family: 'GongGothicMedium';
+      position: absolute;
+      top: 20vw;
+      left: 75vw;
+      transform: translate(5%, -50%);
+      margin-left: 3vw;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+  
+      .mainImageText1, .mainImageText2, .mainImageText3 {
+        font-size: 1.5vw;
+        display: inline-block;
+        opacity: 0;
+        transform: translateX(-50px); /* 텍스트 슬라이드 인 시작 위치 */
+        animation: slideIn 1s ease-out forwards;
+        letter-spacing: -0.001vw; /* 글자 간격 좁히기 */
+      }
+  
+      .mainImageText2 {
+        margin-top: 0.4vw;
+        font-size: 1.5vw;
+  
+        span {
+          letter-spacing: -0.001vw; /* 스팬 내의 글자 간격도 좁힘 */
         }
+      }
+  
+      .mainImageText3 {
 
-        .mainImageText2 {
-            margin-top: 0.4vw;
-            font-weight: 800;
-            font-size: 1.5vw;
-
-            span {
-                font-weight: 600;
-            }
-        }
-
-        .mainImageText3 {
-            margin-top: 1.5vw;
-            color: #1b2d53;
-            font-weight: 900;
-            font-size: 1vw;
-
-            span {
-                padding: 0.5vw 1vw;
-                background-color: #1b2d53;
-                border-bottom-left-radius: 1vw;
-                border-top-right-radius: 1vw;
-
-                color: #FFFFFF;
-                font-size: 1.5vw;
-                font-weight: 600;
-            }
-        }
-
-        .mainImageText4 {
-            margin-top: 1.5vw;
-            color: #1b2d53;
-            font-weight: 600;
-            font-size: 0.5vw;
-        }
-
-        // 텍스트 애니메이션 적용
-        .mainImageTitleBox div {
-            display: inline-block;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeUp 1s ease forwards;
-        }
-
-        .mainImageTitleBox div:nth-child(1) {
-            animation-delay: 0.3s;
-        }
-
-        .mainImageTitleBox div:nth-child(2) {
-            animation-delay: 0.6s;
-        }
-
-        .mainImageTitleBox div:nth-child(3) {
-            animation-delay: 0.9s;
-        }
+        margin-top: 0.5vw;
+        font-size: 2vw;
+        display: inline-block;
+        color: #1b2d53;
+  
+    
+      }
+  
+      /* 각 텍스트 애니메이션 순차적으로 적용 */
+      .mainImageText1 {
+        animation-delay: 0.3s;
+      }
+      .mainImageText2 {
+        animation-delay: 0.6s;
+      }
+      .mainImageText3 {
+        animation-delay: 0.9s;
+      }
+  
+      /* 텍스트 글자마다 슬라이드 애니메이션 적용 */
+      .mainImageText1 span,
+      .mainImageText2 span,
+      .mainImageText3 span {
+        display: inline-block;
+        opacity: 0;
+        transform: translateX(-20px); /* 각 글자도 슬라이드 인 */
+        animation: letterSlideIn 0.5s ease-out forwards;
+      }
+  
+      .mainImageText1 span:nth-child(1) {
+        animation-delay: 0.3s;
+      }
+  
+      .mainImageText2 span:nth-child(1) {
+        animation-delay: 0.6s;
+      }
+  
+      .mainImageText3 span:nth-child(1) {
+        animation-delay: 0.9s;
+      }
     }
-}
-
-// Fade up 애니메이션 정의
-@keyframes fadeUp {
+  }
+  
+  /* Zoom-in 애니메이션 */
+  @keyframes zoomIn {
     to {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: scale(1); /* 초기 크기로 돌아감 */
     }
-}
+  }
+  
+  /* 텍스트 슬라이드 인 애니메이션 */
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0); /* 최종 위치로 이동 */
+    }
+  }
+  
+  /* 글자마다 슬라이드 인 애니메이션 */
+  @keyframes letterSlideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0); /* 글자가 최종 위치로 이동 */
+    }
+  }
+  
+  
+
+
 
 .section1 {
     display: flex;

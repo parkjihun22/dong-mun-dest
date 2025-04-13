@@ -1,51 +1,56 @@
-import React, { useEffect, useState } from "react";
-import { useCookies } from 'react-cookie';
-import styles from "./Popup.module.scss"
+import React, { useState, useEffect } from "react";
+import { FaAngleLeft, FaAngleRight, FaPage4 } from "react-icons/fa6";
 
-import page1 from "../../assets/Popup/page1.jpg";
+import styles from './Popup.module.scss'
+import page1 from '../../assets/Popup/page1.jpg'
+import page2 from '../../assets/Popup/page2.jpg'
+import page3 from '../../assets/Popup/page3.jpg'
 
-const Popup = ({ onClosed }) => {
-    const [type, setType] = useState(0);
-    const [cookies, setCookie] = useCookies(['Popup_Cookie']); // 쿠키에 저장되는 내용
+const popupArray = [
+  { img: page1, url: "" },
+  { img: page2, url: "" },
+  { img: page3, url: "" },
 
-    const onClose = () => {
-        onClosed(false);
-    }
+]
 
-    // 쿠키의 유효기한을 지정하는 함수
-    const getExpiredDate = (days) => {
-        const date = new Date(); // 현재 시간을 받아온다
-        date.setDate(date.getDate() + days);
-        // 현재 시간의 날짜에 days 만큼 더하여 유효기간을 지정
-        return date;
-    };
+const Popup = () => {
+  // 팝업이 열려있는지 여부를 추적하는 상태
+  const [isClick, setIsClick] = useState(false);
 
-    // 닫기 버튼을 누를 때마다 실행될 코드.
-    useEffect(() => {
-        if (type === 1) {
-            // 쿠키를 저장하는 핵심 코드
-            const expires = getExpiredDate(1);
-            setCookie('Popup_Cookie', true, { path: '/', expires });
-            onClose(true);
-        } else if (type === 2) {
-            onClose(true);
-        }
-    }, [type, cookies]);
+  // 페이지 로드 시 2초 후 팝업이 열리도록 useEffect 사용
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsClick(true); // 2초 후에 팝업 자동 열기
+    }, 2000); // 2초 후에 실행
 
-    return (
-        <div className={styles.container}>
+    // 클린업 함수 (컴포넌트가 언마운트될 때 타이머를 정리)
+    return () => clearTimeout(timer);
+  }, []); // 빈 배열을 전달하여 컴포넌트 마운트 시 한 번만 실행
 
-            <div className={styles.imageContainer}>
-                <img className={styles.image1} src={page1} alt="jungheung-class-page1" />
-            </div>
-
-            <div className={styles.closeBtn}>
-                <div onClick={() => setType(1)}>오늘 하루 열지 않기</div>
-                <div onClick={() => setType(2)}>팝업창 닫기</div>
-            </div>
+  return (
+    <div className={styles.container}>
+      {isClick &&
+        <div className={styles.imgContainer} >
+          {popupArray.map((value, idx) => (
+            <img
+              key={idx}  // key를 넣어야 배열 렌더링 시 효율적으로 동작
+              className={styles.popupImg}
+              src={value.img}
+              alt={`progio-popup-image-${idx}`}
+            />
+          ))}
         </div>
-    )
+      }
+      <div className={styles.openPopupBtn} onClick={() => setIsClick(!isClick)}>
+        <div className={styles.btnIcon}>
+          {isClick ? <FaAngleLeft size={20} color={"#FFFFFF"} /> : <FaAngleRight size={20} color={"#FFFFFF"} />}
+        </div>
+        <div className={styles.btnText}>
+          POPUP
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Popup;
-

@@ -18,12 +18,16 @@ import section4_Image2 from "../../assets/Main/section4-img2.png";
 import section4_Image3 from "../../assets/Main/section4-img3.png";
 import section4_Image4 from "../../assets/Main/section4-img4.png";
 import section5_Image1 from "../../assets/Main/section5-img1.jpg";
+import mobilePopupPage1 from "../../assets/Popup/mobilepage1.jpg";
+import mobilePopupPage2 from "../../assets/Popup/mobilepage2.jpg";
+import mobilePopupPage3 from "../../assets/Popup/mobilepage3.jpg";
+
 // import section4_Image2 from "../../assets/Main/section4-img2.jpg";
 // import section4_Image3 from "../../assets/Main/section4-img3.jpg";
 import mobileImageMain from "../../assets/Main/mobileMain1.jpg";
 import MobileSectionBox from "../../components/MobileSectionBox/MobileSectionBox";
+import MobilePopup from "../../components/MobilePopup/MobilePopup";
 import Popup from "../../components/Popup/Popup";
-
 const section4Contents = [
 	{
 		imgSrc: section4_Image1,
@@ -71,8 +75,11 @@ const Main = () => {
 	const [isScroll, setIsScroll] = useState(false);
 	const [page, setPage] = useState(1); // 페이지 세션 번호
 	const [isScrolling, setIsScrolling] = useState(false); // 스크롤 중인지 여부 확인
+	const [isOpenPopup1, setIsOpenPopup1] = useState(true);
+	const [isOpenPopup2, setIsOpenPopup2] = useState(true);
+	const [isOpenPopup3, setIsOpenPopup3] = useState(true);
+	const [isOpenPopup4, setIsOpenPopup4] = useState(true);
 	const isMobile = useMediaQuery({ query: '(max-width: 900px)' }); // 모바일 여부 확인
-	const [isOpenPopup, setIsOpenPopup] = useState(true);
 
 	// 화면 스크롤이 탑이 아니면 isScroll 값을 true로 변환
 	useEffect(() => {
@@ -143,17 +150,31 @@ const Main = () => {
 			{!isMobile ? (
 
 				<>
-					{isOpenPopup && <Popup onClosed={() => setIsOpenPopup(!isOpenPopup)} />}
+			
+						
 					<Header isChanged={isScroll} />
+					<Popup />
 
 					<div className={styles.imageContainer}>
-						<img src={mainImage} className={styles.mainImage} /> 
-						<div className={styles.mainImageTextBox}>
-							<div className={styles.mainImageText1}>평택의 새로운 중심 화양</div>
-							<div className={styles.mainImageText2}>안중역 프리미엄을<span> 누리는</span></div>
-							<div className={styles.mainImageText3}><span>평택 화양 동문디이스트</span></div>
-
-						</div>
+  <img src={mainImage} className={styles.mainImage} alt="Main Image" />
+  <div className={styles.mainImageTextBox}>
+    <div className={styles.mainImageText1}>
+      {"평택의 새로운 중심 화양".split("").map((char, index) => (
+        <span key={index}>{char}</span>
+      ))}
+    </div>
+    <div className={styles.mainImageText2}>
+      {"안중역 프리미엄을".split("").map((char, index) => (
+        <span key={index}>{char}</span>
+      ))}
+      <span> 누리는</span>
+    </div>
+    <div className={styles.mainImageText3}>
+      <span>{"평택 화양 동문디이스트".split("").map((char, index) => (
+        <span key={index}>{char}</span>
+      ))}</span>
+    </div>
+  </div>
 
 						<FixIcon type="absolute" />
 					</div>
@@ -256,7 +277,10 @@ const Main = () => {
 				</>
 			) : (
 				<div className={styles.mobileMain}>
-					{isOpenPopup && <Popup onClosed={() => setIsOpenPopup(!isOpenPopup)} />}
+					{isOpenPopup1 && <MobilePopup onClosed={() => setIsOpenPopup1(!isOpenPopup1)} popupImage={mobilePopupPage1} numbering={1} />}
+					{isOpenPopup2 && <MobilePopup onClosed={() => setIsOpenPopup2(!isOpenPopup2)} popupImage={mobilePopupPage2} numbering={2} />}
+					{isOpenPopup3 && <MobilePopup onClosed={() => setIsOpenPopup3(!isOpenPopup3)} popupImage={mobilePopupPage3} numbering={3} />}
+			
 					<Header isChanged={isScroll} />
 
 					<div className={styles.imageContainer}>
